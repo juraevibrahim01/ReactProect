@@ -7,8 +7,10 @@ import Quiz from '../assets/quiz.svg'
 import Schools from '../assets/school.svg'
 import Person from '../assets/person.svg'
 import Login from '../assets/login.svg'
+import { NavLink } from "react-router-dom";
 
 function SideBar () {
+
     return (
         <div className={sideBar.sideBar}>
             <div className={sideBar.logo}>
@@ -17,17 +19,21 @@ function SideBar () {
             </div>
             <div className={sideBar.pagesDiv}>
                 <div className={sideBar.pages}>
-                    <Link to={'/'}>
+                    <NavLink to={'/'} className={({ isActive }) =>
+                        isActive ? `${sideBar.active}` : sideBar.pages
+                    }>
                     <img src={homeLogo} alt="home logo" />
                     Home
-                    </Link>
+                    </NavLink>
                 </div>
                 <div>
                     <div className={sideBar.pages}>
-                    <Link to={'/library'}>
+                    <NavLink to={'/library'} className={({ isActive }) =>
+                        isActive ? `${sideBar.active}` : sideBar.pages
+                    }>
                     <img src={Library} alt="library logo" />
                     Library
-                    </Link>
+                    </NavLink>
                     </div>
                 </div>
                 <div>
@@ -40,7 +46,7 @@ function SideBar () {
                 </div>
                 <div>
                     <div className={sideBar.pages}>
-                    <Link to={'/schools'}>
+                    <Link to={'/schools'} >
                     <img src={Schools} alt="schools logo" />
                     Academy courses
                     </Link>

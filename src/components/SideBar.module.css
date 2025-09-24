@@ -44,3 +44,8 @@
     flex-direction: column;
     gap: 25px;
 }
+
+.active {
+  background-color: #f0f0f0b2; /* цвет активного элемента */
+  border-radius: 5px;
+}
