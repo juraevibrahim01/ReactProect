@@ -1,0 +1,41 @@
+.home {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+}
+
+.text {
+    width: 40%;
+}
+
+.text h2 {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.text p {
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.img {
+    width: 60%;
+}
+
+.img img {
+    width: 500px;
+
+}
+
+.text a {
+    text-decoration: none;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}

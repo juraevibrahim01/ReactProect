@@ -1,0 +1,46 @@
+.sideBar {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    width: var(--sideBar-width);
+    min-height: 100vh;
+    padding: 20px;
+    background-color: rgb(17, 17, 83);
+    position: fixed;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo span {
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+}
+
+.pages a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.pages a:active {
+    color: brown;
+}
+
+.pagesDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}

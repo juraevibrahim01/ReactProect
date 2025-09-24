@@ -1,0 +1,47 @@
+.library {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.library div {
+    width: 80%;
+}
+
+.search {
+    width: 100% !important;
+    height: 70px;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.searchDiv {
+    width: 40% !important;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.searchDiv img {
+    width: 26px;
+    height: 26px;
+}
+
+.searchDiv input {
+    width: 80%;
+    height: 70%;
+}
+
+.books {
+    width: 100% !important;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    margin-bottom: 40px;
+}

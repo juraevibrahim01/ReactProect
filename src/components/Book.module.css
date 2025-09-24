@@ -1,0 +1,64 @@
+.book {
+    width: 25% !important;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.img {
+    width: 90% !important;
+    height: 50%;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bookContent {
+    width: 90% !important;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    flex: 1;
+}
+
+.content h2 {
+    font-size: 18px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content p {
+    font-size: 16px;
+    margin: 10px 0px 0px 0px;
+    padding: 0px;
+    color: gray;
+}
+
+.button {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button button {
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button button:hover {
+    background-color: rgba(128, 128, 128, 0.548);
+    cursor: pointer;
+}
+
+.button button:active {
+    background-color: gray;
+}
