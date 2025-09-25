@@ -1,0 +1,142 @@
+.school {
+    margin: 0px 20px 20px 40px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.schooldiv {
+    width: 80%;
+    text-align: start;
+}
+
+.search {
+    width: 80%;
+    height: 10%;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+}
+
+.search div {
+    width: 40% !important;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.search div input {
+    width: 80%;
+    height: 70%;
+}
+
+.curseDiv {
+    width: 100%;
+    margin: 40px 20px 0px 20px;
+}
+
+.curse {
+    background-color: #8d87874b;
+    width: 40%;
+    border-radius: 10px;
+    display: flex;
+    padding-top: 10px;
+}
+
+.curse:hover {
+    box-shadow: 0 0 10px -3px #ff4500;
+}
+
+.info {
+    width: 50%;
+    padding: 10px;
+}
+
+.img {
+    width: 50%;
+}
+
+.learn {
+    display: flex;
+}
+
+.learn div {
+    background-color: white;
+    width: 30%;
+    height: 45.23px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.learn div img {
+    width: 30px;
+}
+
+.name {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.mentor {
+    font-size: 15px;
+}
+
+.nameMentor {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 30px;
+}
+
+.start {
+    padding: 20px 0px 0px 0px;
+}
+
+.start span {
+    border-radius: 10px;
+    padding: 4px;
+    color: white;
+    background-color: black;
+}
+
+.imgDiv {
+    height: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+.imgDiv img {
+    width: 100%;
+    height: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+.button a {
+    background-color: blue;
+    text-decoration: none;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 700;
+}
+
+.button a:hover {
+    background-color: rgba(20, 20, 141, 0.5);
+}
+
+.button a:active {
+    background-color: blue;
+}

@@ -3,6 +3,9 @@ import { Home } from "../pages/Home";
 import { Library } from "../pages/Library";
 import { createBrowserRouter } from "react-router";
 import { Quiz } from "../pages/QuizPage";
+import { TestPage } from "../components/Test";
+import { SchoolPage } from "../pages/SchoolPage";
+import { SignupPage } from "../pages/SignUpPage";
 
 export const routes = createBrowserRouter([
     {
@@ -20,6 +23,18 @@ export const routes = createBrowserRouter([
             {
                 path: '/quiz',
                 element: <Quiz/>
+            },
+            {
+                path: 'quiz/:id',
+                element: <TestPage />
+            },
+            {
+                path: '/schools',
+                element: <SchoolPage />
+            },
+            {
+                path: "/signup",
+                element: <SignupPage />
             }
         ]
     } 

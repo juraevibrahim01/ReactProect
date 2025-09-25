@@ -1,8 +1,9 @@
 import quiz from './Quiz.module.css'
 import iconTimer from '../assets/timer.svg'
 import { Quiz } from '../pages/QuizPage'
+import { Link } from "react-router-dom";
 
-export const QuizCom = ({title, img, level}) => {
+export const QuizCom = ({title, img, level, id}) => {
     return (
         <div className={quiz.div}>
             <div>
@@ -20,7 +21,7 @@ export const QuizCom = ({title, img, level}) => {
                 <span>3 min</span>
             </div>
             <div className={quiz.button}>
-                <button type='button'>START</button>
+                <Link to={`/quiz/${id}`}>START</Link>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 .div {
-    width: 30%;
+    width: 25%;
     border: 1px solid black;
     background-color: rgba(128, 128, 128, 0.137);
     display: flex;
@@ -44,4 +44,18 @@
 .img {
     width: 80px;
     height: 81px;
+}
+
+.button {
+    background-color: rgba(18, 18, 161, 0.288);
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: rgb(137, 43, 226);
+}
+
+.button a {
+    text-decoration: none;
 }

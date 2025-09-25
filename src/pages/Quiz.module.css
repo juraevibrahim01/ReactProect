@@ -10,4 +10,8 @@
 
 .quizs {
     margin: 0px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
 }

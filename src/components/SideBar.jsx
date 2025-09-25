@@ -38,34 +38,42 @@ function SideBar () {
                 </div>
                 <div>
                     <div className={sideBar.pages}>
-                    <Link to={'/quiz'}>
+                    <NavLink to={'/quiz'} className={({ isActive }) =>
+                        isActive ? `${sideBar.active}` : sideBar.pages
+                    }>
                     <img src={Quiz} alt="quiz logo" />
                     Quizes
-                    </Link>
+                    </NavLink>
                     </div>
                 </div>
                 <div>
                     <div className={sideBar.pages}>
-                    <Link to={'/schools'} >
+                    <NavLink to={'/schools'} className={({ isActive }) =>
+                        isActive ? `${sideBar.active}` : sideBar.pages 
+                    }>
                     <img src={Schools} alt="schools logo" />
                     Academy courses
-                    </Link>
+                    </NavLink>
                     </div>
                 </div>
                 <div>
                     <div className={sideBar.pages}>
-                    <Link to={'/person'}>
+                    <NavLink to={'/person'} className={({ isActive }) =>
+                        isActive ? `${sideBar.active}` : sideBar.pages 
+                    }>
                     <img src={Person} alt="person logo" />
                     Our mentors
-                    </Link>
+                    </NavLink>
                     </div>
                 </div>
                 <div>
                     <div className={sideBar.pages}>
-                    <Link to={'/login'}>
+                    <NavLink to={'/login'} className={({ isActive }) =>
+                        isActive ? `${sideBar.active}` : sideBar.pages 
+                    }>
                     <img src={Login} alt="login logo" />
                     login
-                    </Link>
+                    </NavLink>
                     </div>
                 </div>
             </div>
