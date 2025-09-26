@@ -6,6 +6,7 @@ import { Quiz } from "../pages/QuizPage";
 import { TestPage } from "../components/Test";
 import { SchoolPage } from "../pages/SchoolPage";
 import { SignupPage } from "../pages/SignUpPage";
+import { OurMentors } from '../pages/OurMentorsPage'
 
 export const routes = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/signup",
                 element: <SignupPage />
+            },
+            {
+                path: "/ourMentors",
+                element: < OurMentors />
             }
         ]
     } 

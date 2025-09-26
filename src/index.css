@@ -4,6 +4,8 @@
   height: 100%;
   font-family: 'Inter', sans-serif;/* Основной */
   display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
 :root {
@@ -26,7 +28,24 @@ h1, h2, h3 {
   font-family: 'Nunito', sans-serif; /* для заголовков */
 }
 
-.app_conteiner {
+.app_container {
   margin-left: calc(var(--sideBar-width) + 20px);
   width: 100%;
+}
+
+/* если ширина экрана меньше 700px */
+@media (max-width: 850px) {
+  .app_container {
+    margin-top: 90px;
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  :root {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    /* --sideBar-width: 260px; */
+  }
 }

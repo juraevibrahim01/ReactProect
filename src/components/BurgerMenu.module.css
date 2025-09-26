@@ -1,0 +1,88 @@
+/* фиксированная шапка */
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-right: 10px;
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 1002;
+}
+
+/* логотип и название */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* кнопка-бургер */
+.burger {
+  width: 30px;
+  height: 22px;
+  margin-right: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* анимация крестика */
+.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.open span:nth-child(2) {
+  opacity: 0;
+}
+.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* меню на весь экран */
+.menu {
+  position: fixed;
+  top: 60px; /* под шапкой */
+  left: 0;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  z-index: 1001;
+}
+
+/* активное меню */
+.menu.active {
+  transform: translateY(0);
+}
+
+/* стили ссылок внутри */
+.menu .pages {
+  margin-bottom: 15px;
+}
+
+.menu .pages a {
+  color: #333;
+  font-size: 18px;
+  text-decoration: none;
+}

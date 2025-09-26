@@ -1,7 +1,7 @@
 import { School } from "./School"
 import { SchoolData } from "./SchoolData"
 
-export const Schools = () => {
+export const Schools = ({SchoolData}) => {
     return (
         <>
         {SchoolData.map((item,i) => (

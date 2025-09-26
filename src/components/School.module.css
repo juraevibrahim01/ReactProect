@@ -43,6 +43,7 @@
 .curse {
     background-color: #8d87874b;
     width: 40%;
+    height: 250px;
     border-radius: 10px;
     display: flex;
     padding-top: 10px;
