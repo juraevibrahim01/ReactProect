@@ -74,7 +74,7 @@
 
 @media (max-width: 660px) {
     .text h2 {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 900;
     }
     .img img {
@@ -82,7 +82,7 @@
     }
 
     .text p {
-        font-size: 14px;
+        font-size: 17px;
         margin-bottom: 35px;
     }
     .text a {
@@ -97,20 +97,25 @@
 }
 
 @media (max-width: 560px) {
+    .img {
+        margin-top: 20px;
+    }
+
     .img img {
-        width: 300px;
+        width: 270px;
     }
 }
 
 @media (max-width: 400px) {
     .img img {
-        width: 250px;
+        width: 200px;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 350px) {    
     .img img {
         width: 200px;
     }
+
 }
 

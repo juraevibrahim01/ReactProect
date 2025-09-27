@@ -29,6 +29,7 @@ h1, h2, h3 {
 }
 
 .app_container {
+  display: flex;
   margin-left: calc(var(--sideBar-width) + 20px);
   width: 100%;
 }
@@ -48,4 +49,8 @@ h1, h2, h3 {
     box-sizing: border-box;
     /* --sideBar-width: 260px; */
   }
+}
+
+@media (max-width: 400px) {
+
 }

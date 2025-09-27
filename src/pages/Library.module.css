@@ -45,3 +45,22 @@
     gap: 50px;
     margin-bottom: 40px;
 }
+
+@media (max-width: 850px) {
+    .library {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+    }
+    .library div h2 {
+        margin: 50px 0px 30px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .searchDiv  {
+        width: 60% !important;
+    }
+
+}
