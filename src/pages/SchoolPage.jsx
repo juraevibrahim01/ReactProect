@@ -15,18 +15,20 @@ export const SchoolPage = () => {
     );
 
     return (
-        <div className={SchoolStyle.school}>
-            <div className={SchoolStyle.schooldiv}>
-                <h2>Jura academy programming courses</h2>
-            </div>
-            <div className={SchoolStyle.search}>
-                <div>
-                    <img src={SearchImg} alt="Search Image" />
-                    <input type="search" placeholder='Searching for course....' value={search} onChange={(e) => setSearch(e.target.value)} />
+        <div className={SchoolStyle.schoolDiv}>
+            <div className={SchoolStyle.school}>
+                <div className={SchoolStyle.schooldiv}>
+                    <h2>Jura academy programming courses</h2>
                 </div>
-            </div> 
-            <div className={SchoolStyle.curseDiv}>
-                <Schools SchoolData = {filteredBooks} />
+                <div className={SchoolStyle.search}>
+                    <div>
+                        <img src={SearchImg} alt="Search Image" />
+                        <input type="search" placeholder='Searching for course....' value={search} onChange={(e) => setSearch(e.target.value)} />
+                    </div>
+                </div> 
+                <div className={SchoolStyle.curseDiv}>
+                    <Schools SchoolData = {filteredBooks} />
+                </div>
             </div>
         </div>
     )

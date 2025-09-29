@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 import UndoSvg from '../assets/undo.svg';
 import ResetSvg from '../assets/replay.svg';
 import timerBig from '../assets/timerBig.svg';
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/hljs";
+import { splitQuestion } from "../utils/splitQuestion";
+
 
 export const TestPage = () => {
   const { id } = useParams();
@@ -16,6 +20,7 @@ export const TestPage = () => {
   const [score, setScore] = useState(0);
   const [finished, setFinished] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
+  const [questionText, questionCode] = splitQuestion(quiz.questions[currentQ].question);
 
   // ⏳ состояние таймера (в секундах) — например, 3 минуты
   const [timeLeft, setTimeLeft] = useState(3 * 60);
@@ -91,8 +96,14 @@ export const TestPage = () => {
               <span>{formatTime(timeLeft)}</span>
             </div>
           </div>
-
-          <h3>{quiz.questions[currentQ].question}</h3>
+          {!questionText && !questionCode ? <h3>{quiz.questions[currentQ].question}</h3> : <>
+            <h3>{questionText}</h3>
+            <div>
+              <SyntaxHighlighter language="javascript" style={dark}>
+                {questionCode}
+              </SyntaxHighlighter>
+            </div>
+          </>}
 
           {quiz.questions[currentQ].options.map((option, i) => (
             <label

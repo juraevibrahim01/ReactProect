@@ -48,6 +48,7 @@
 
 @media (max-width: 850px) {
     .library {
+        margin-top: 50px;
         width: 100%;
         display: flex;
         justify-content: center;

@@ -40,3 +40,19 @@
 .prof {
     font-style: 18px;
 }
+
+@media (max-width: 550px) {
+    .mentor {
+        width: 260px;
+        height: 270px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mentor {
+        width: 220px;
+        height: 220px;
+        padding: 10px;
+    }
+}

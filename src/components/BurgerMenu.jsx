@@ -6,6 +6,9 @@ import logo from "../assets/logo.svg";
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+    // функция закрытия меню
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <>
       {/* шапка с логотипом и кнопкой */}
@@ -27,7 +30,7 @@ export const BurgerMenu = () => {
 
       {/* выезжающее меню */}
       <nav className={`${BurgerStyle.menu} ${isOpen ? BurgerStyle.active : ""}`}>
-        <NavLinks />
+        <NavLinks onClick={closeMenu} />
       </nav>
     </>
   );

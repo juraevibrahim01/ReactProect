@@ -64,6 +64,7 @@
 
 .learn {
     display: flex;
+    gap: 7px;
 }
 
 .learn div {
@@ -140,4 +141,52 @@
 
 .button a:active {
     background-color: blue;
+}
+
+@media (max-width: 1100px) {
+    .imgDiv img {
+        width: 80%;
+        height: 80%;
+    }
+    .nameMentor {
+        margin-bottom: 20px;
+    }
+    .name {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .mentor {
+        font-size: 13px;
+    }
+    .learn div img {
+        width: 25px;
+    }
+    .learn div {
+        background-color: white;
+        width: 25%;
+        height: 42.23px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .start span {
+        font-size: 13px;
+    }
+    .button a {
+        padding: 15px 7px 15px 7px;
+        font-weight: 600;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 620px) {
+    .curse {
+        background-color: #8d87874b;
+        width: 224px;
+        height: 240px;
+        border-radius: 10px;
+        display: flex;
+        padding-top: 10px;
+    }
 }

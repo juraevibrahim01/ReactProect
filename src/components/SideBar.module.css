@@ -9,6 +9,11 @@
     position: fixed;
 }
 
+.pagesDiv a{
+    width: 100%;
+    padding: 10px;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -33,6 +38,8 @@
     gap: 10px;
     text-decoration: none;
     color: white;
+    padding: 10px;
+    width: 70%;
 }
 
 .pages a:active {

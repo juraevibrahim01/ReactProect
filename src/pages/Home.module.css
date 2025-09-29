@@ -1,10 +1,10 @@
 .home {
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    padding-left: 90px;
+    padding-left: 60px;
 }
 
 .text {
@@ -26,7 +26,7 @@
 }
 
 .img img {
-    width: 500px;
+    width: 460px;
 }
 
 .text a {
@@ -46,6 +46,8 @@
 @media (max-width: 850px) {
     .home{
         padding-left: 0px !important;
+        height: 100vh;
+        margin-top: 120px;
     }
     .img img {
         width: 400px;
@@ -109,6 +111,18 @@
 @media (max-width: 400px) {
     .img img {
         width: 200px;
+    }
+    .text h2 {
+        font-size: 18px;
+        font-weight: 900;
+    }
+
+    .text p {
+        font-size: 15px;
+        margin-bottom: 35px;
+    }
+    .text a {
+        font-size: 13px;
     }
 }
 

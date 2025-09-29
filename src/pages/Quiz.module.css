@@ -1,17 +1,39 @@
 .quiz {
-    margin-left: 40px;
-    padding-top: 20px;
+    margin-left: 20px;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.quizDiv {
+    display: flex;
+    justify-content: center;
 }
 
 .quizDiv h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 700;
 }
 
 .quizs {
-    margin: 0px 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
     justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 850px) {
+    .quiz {
+        margin-top: 140px;
+        margin-left: 0px;
+        height: 100vh;
+        width: 100vh;
+        padding: 70px 0px 40px 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .quizDiv h2 {
+        font-size: 20px;
+    }
 }
