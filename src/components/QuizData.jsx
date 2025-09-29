@@ -6,54 +6,54 @@ export const quizData = [
         level: "EASY",
         questions: [
             {
-                question: "Что означает тег <p>?",
-                options: ["Параграф", "Картинка", "Ссылка"],
-                answer: "Параграф"
+                question: "What does the <p> tag mean?",
+                options: ["Paragraph", "Image", "Link"],
+                answer: "Paragraph"
             },
             {
-                question: "Как задать ссылку?",
+                question: "How to create a link?",
                 options: ["<a>", "<link>", "<href>"],
                 answer: "<a>"
             },
             {
-                question: "Что такое HTML?",
-                options: ["Язык программирования", "Язык разметки", "База данных"],
-                answer: "<a>"
+                question: "What is HTML?",
+                options: ["Programming language", "Markup language", "Database"],
+                answer: "Markup language"
             },
             {
-                question: "Как создать заголовок 1 уровня?",
-                options: ["<h1>Заголовок</h1>", "<header>Заголовок</header>", "<head>Заголовок</head>"],
-                answer: "<h1>Заголовок</h1>"
+                question: "How to create a level 1 heading?",
+                options: ["<h1>Heading</h1>", "<header>Heading</header>", "<head>Heading</head>"],
+                answer: "<h1>Heading</h1>"
             },
             {
-                question: "Как вставить ссылку на другой сайт?",
-                options: ["<link href='url'>Ссылка</link>", "<a href='url'>Ссылка</a>", "<url href='url'>Ссылка</url>"],
-                answer: "<a href='url'>Ссылка</a>"
+                question: "How to insert a link to another website?",
+                options: ["<link href='url'>Link</link>", "<a href='url'>Link</a>", "<url href='url'>Link</url>"],
+                answer: "<a href='url'>Link</a>"
             },
             {
-                question: "Как создать ненумерованный список?",
-                options: ["<ul><li>Элемент</li></ul>", "<ol><li>Элемент</li></ol>", "<list><li>Элемент</li></list>"],
-                answer: "<ul><li>Элемент</li></ul>"
+                question: "How to create an unordered list?",
+                options: ["<ul><li>Item</li></ul>", "<ol><li>Item</li></ol>", "<list><li>Item</li></list>"],
+                answer: "<ul><li>Item</li></ul>"
             },
             {
-                question: "Как вставить картинку в HTML?",
+                question: "How to insert an image in HTML?",
                 options: ["<pic src='image.png' />", "<img src='image.png' />", "<image src='image.png'></image>"],
                 answer: "<img src='image.png' />"
             },
             {
-                question: "Для чего нужен тег <p>?",
-                options: ["Создаёт параграф", "Создаёт ссылку", "Создаёт таблицу"],
-                answer: "Создаёт параграф"                
+                question: "What is the purpose of the <p> tag?",
+                options: ["Creates a paragraph", "Creates a link", "Creates a table"],
+                answer: "Creates a paragraph"                
             }, 
             {
-                question: "Что делает тег <br>?",
-                options: ["Создаёт список", "Создаёт перенос строки", "Создаёт жирный текст"],
-                answer: "Создаёт перенос строки"
+                question: "What does the <br> tag do?",
+                options: ["Creates a list", "Creates a line break", "Creates bold text"],
+                answer: "Creates a line break"
             },
             {
-                question: "Как задать заголовок страницы?",
-                options: ["<head>Заголовок</head>", "<h1>Заголовок</h1>", "<title>Заголовок</title>"],
-                answer: "Создаёт перенос строки"
+                question: "How to set the page title?",
+                options: ["<head>Title</head>", "<h1>Title</h1>", "<title>Title</title>"],
+                answer: "<title>Title</title>"
             }
         ]
     },
@@ -64,94 +64,94 @@ export const quizData = [
         level: "MEDIUM",
         questions: [
             {
-                question: "Что выведет следующий код?humoconst [state, dispatch] = useReducer((state, action) => {#$@  switch (action.type) {#$@    case 'increment': return state + 1;#$@    default: return state;#$@  }#$@}, 0);#$@dispatch({ type: 'increment' });#$@console.log(state);",
-                options: ["1", "0", "undefined", "Ошибка"],
+                question: "What will the following code output?humoconst [state, dispatch] = useReducer((state, action) => {#$@  switch (action.type) {#$@    case 'increment': return state + 1;#$@    default: return state;#$@  }#$@}, 0);#$@dispatch({ type: 'increment' });#$@console.log(state);",
+                options: ["1", "0", "undefined", "Error"],
                 answer:"0"
             },
             {
-                question: "Что такое Concurrent Rendering в React?",
-                options: ["Тип хука","Метод для управления состоянием","Инструмент для стилизации","Механизм для одновременного рендеринга нескольких компонентов"],
-                answer:"Механизм для одновременного рендеринга нескольких компонентов"
+                question: "What is Concurrent Rendering in React?",
+                options: ["Type of hook","Method to manage state","Styling tool","Mechanism for rendering multiple components simultaneously"],
+                answer:"Mechanism for rendering multiple components simultaneously"
             },
             {
-                question: "Что делает хук useLayoutEffect?",
+                question: "What does the useLayoutEffect hook do?",
                 options: [
-                            "Выполняет побочные эффекты после рендеринга, но до отрисовки в браузере",
-                            "Управляет состоянием",
-                            "Создает компонент",
-                            "Обрабатывает события"
+                            "Performs side effects after rendering but before the browser paint",
+                            "Manages state",
+                            "Creates a component",
+                            "Handles events"
                         ],
-                answer:"Выполняет побочные эффекты после рендеринга, но до отрисовки в браузере"
+                answer:"Performs side effects after rendering but before the browser paint"
             },
             {
-                question: "Что такое React Fiber?",
+                question: "What is React Fiber?",
                 options: [
-                        "Архитектура для управления рендерингом в React",
-                        "Библиотека для стилизации",
-                        "Тип компонента",
-                        "Хук для эффектов"
+                        "Architecture for managing rendering in React",
+                        "Styling library",
+                        "Component type",
+                        "Hook for effects"
                         ],
-                answer:"Архитектура для управления рендерингом в React"
+                answer:"Architecture for managing rendering in React"
             },
             {
-                question: "Что выведет следующий код?humoconst memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
+                question: "What will the following code do?humoconst memoizedValue = useMemo(() => computeExpensiveValue(a, b), [a, b]);",
                 options: [
-                        "Ошибка",
-                        "Создание нового компонента",
-                        "Мемоизация значения, пересчитываемого при изменении a или b",
-                        "Перерендеринг компонента"
+                        "Error",
+                        "Creates a new component",
+                        "Memoizes a value that recalculates when a or b changes",
+                        "Rerenders the component"
                         ],
-                answer:"Мемоизация значения, пересчитываемого при изменении a или b"
+                answer:"Memoizes a value that recalculates when a or b changes"
             },
             {
-                question: "Что такое Suspense в React?",
+                question: "What is Suspense in React?",
                 options: [
-                "Хук для управления состоянием",
-                "Компонент для отображения загрузки при асинхронных операциях",
-                "Метод для рендеринга",
-                "Тип пропсов"
+                "Hook for managing state",
+                "Component to show loading during async operations",
+                "Method for rendering",
+                "Type of props"
                 ],
-                answer:"Компонент для отображения загрузки при асинхронных операциях"
+                answer:"Component to show loading during async operations"
             },
             {
-                question: "Что делает метод shouldComponentUpdate?",
+                question: "What does the shouldComponentUpdate method do?",
                 options: [
-                        "Обрабатывает события",
-                        "Создает новый компонент",
-                        "Управляет эффектами",
-                        "Определяет, нужно ли обновлять классовый компонент"
+                        "Handles events",
+                        "Creates a new component",
+                        "Manages effects",
+                        "Determines whether a class component should update"
                         ],
-                answer:"Определяет, нужно ли обновлять классовый компонент"
+                answer:"Determines whether a class component should update"
             },
             {
-                question: "Что такое Error Boundary?",
+                question: "What is an Error Boundary?",
                 options: [
-                        "Инструмент для стилизации",
-                        "Тип хука",
-                        "Метод для рендеринга",
-                        "Компонент для обработки ошибок в дочерних компонентах"
+                        "Styling tool",
+                        "Hook type",
+                        "Rendering method",
+                        "Component to handle errors in child components"
                         ],
-                answer:"Компонент для обработки ошибок в дочерних компонентах"
+                answer:"Component to handle errors in child components"
             },
             {
-                question: "Что выведет следующий код?humouseEffect(() => {#$@  const id = setInterval(() => console.log('tick'), 1000);#$@}, []);",
+                question: "What will the following code output?humouseEffect(() => {#$@  const id = setInterval(() => console.log('tick'), 1000);#$@}, []);",
                 options: [
-                        "Ошибка из-за отсутствия очистки интервала",
-                        "Лог 'tick' каждую секунду",
-                        "Ничего не выведет",
-                        "Один раз выведет 'tick'"
+                        "Error due to missing interval cleanup",
+                        "Logs 'tick' every second",
+                        "Outputs nothing",
+                        "Logs 'tick' once"
                         ],
-                answer:"Ошибка из-за отсутствия очистки интервала"
+                answer:"Error due to missing interval cleanup"
             },
             {
-                question: "Что такое Server Components в React?",
+                question: "What are Server Components in React?",
                 options: [
-                        "Компоненты для управления состоянием",
-                        "Компоненты, рендерящиеся только на сервере",
-                        "Хуки для эффектов",
-                        "Тип пропсов"
+                        "Components for managing state",
+                        "Components that render only on the server",
+                        "Hooks for effects",
+                        "Type of props"
                         ],
-                answer:"Компоненты, рендерящиеся только на сервере"
+                answer:"Components that render only on the server"
             }
         ]
     },
@@ -162,17 +162,17 @@ export const quizData = [
         level: "MEDIUM",
         questions: [
             {
-                question: "Какой результат этого кода?humo<input type=\"checkbox\" checked/>",
+                question: "What is the result of this code?humo<input type=\"checkbox\" checked/>",
                 options: [
-                        "Чекбокс будет неактивен",
-                        "Чекбокс будет изначально выбран",
-                        "Ошибка",
-                        "Ничего не произойдёт"
+                        "Checkbox will be inactive",
+                        "Checkbox will be initially checked",
+                        "Error",
+                        "Nothing will happen"
                         ],
-                answer: "Чекбокс будет изначально выбран"
+                answer: "Checkbox will be initially checked"
             },
             {
-                question: "Какой тег используется для создания выпадающего списка?",
+                question: "Which tag is used to create a dropdown list?",
                 options: [
                         "<list>",
                         "<menu>",
@@ -182,27 +182,27 @@ export const quizData = [
                 answer: "<select>"
             },
             {
-                question: "Как вставить комментарий в HTML?",
+                question: "How to insert a comment in HTML?",
                 options: [
-                        "// комментарий",
-                        "/* комментарий */",
-                        "<!-- комментарий -->",
-                        "# комментарий"
+                        "// comment",
+                        "/* comment */",
+                        "<!-- comment -->",
+                        "# comment"
                         ],
-                answer: "<!-- комментарий -->"
+                answer: "<!-- comment -->"
             },
             {
-                question: "Что делает атрибут action у формы?",
+                question: "What does the action attribute in a form do?",
                 options: [
-                        "Указывает URL для отправки данных",
-                        "Запускает JavaScript",
-                        "Сохраняет форму",
-                        "Проверяет форму"
+                        "Specifies the URL to submit data",
+                        "Runs JavaScript",
+                        "Saves the form",
+                        "Validates the form"
                         ],
-                answer: "Указывает URL для отправки данных"
+                answer: "Specifies the URL to submit data"
             },
             {
-                question: "Какой тег используется для встраивания другого HTML-документа?",
+                question: "Which tag is used to embed another HTML document?",
                 options: [
                         "<div>",
                         "<script>",
@@ -212,17 +212,17 @@ export const quizData = [
                 answer: "<iframe>"
             },
             {
-                question: "Какое значение имеет атрибут target=\"_blank\" у ссылки?",
+                question: "What does the target=\"_blank\" attribute in a link do?",
                 options: [
-                        "Открывает ссылку в том же окне",
-                        "Открывает в новой вкладке",
-                        "Делает ссылку неактивной",
-                        "Скрывает ссылку"
+                        "Opens link in the same window",
+                        "Opens in a new tab",
+                        "Makes the link inactive",
+                        "Hides the link"
                         ],
-                answer: "Открывает в новой вкладке"
+                answer: "Opens in a new tab"
             },
             {
-                question: "Какой атрибут задает текст, отображаемый при наведении?",
+                question: "Which attribute sets the text shown on hover?",
                 options: [
                         "label",
                         "alt",
@@ -232,17 +232,17 @@ export const quizData = [
                 answer: "title"
             },
             {
-                question: "Что делает тег <label for=\"email\">?",
+                question: "What does the <label for=\"email\"> tag do?",
                 options: [
-                        "Связывает текст с input-элементом с id=\"email\"",
-                        "Добавляет стили",
-                        "Создает поле",
-                        "Валидирует email"
+                        "Associates text with an input element with id=\"email\"",
+                        "Adds styles",
+                        "Creates a field",
+                        "Validates email"
                         ],
-                answer: "Связывает текст с input-элементом с id=\"email\""
+                answer: "Associates text with an input element with id=\"email\""
             },
             {
-                question: "Какой тег HTML5 используется для навигации?",
+                question: "Which HTML5 tag is used for navigation?",
                 options: [
                         "<nav>",
                         "<menu>",
@@ -251,7 +251,7 @@ export const quizData = [
                 answer: "<nav>"
             },
             {
-                question: "Какой элемент HTML5 используется для группировки основного контента?",
+                question: "Which HTML5 element is used to group main content?",
                 options: [
                         "<body>",
                         "<div>",
@@ -269,22 +269,22 @@ export const quizData = [
         level: "HARD",
         questions: [
         {
-            question: "Что выведет следующий код?humoclass A:#$@    x = 1#$@class B(A):#$@     x = 2#$@class C(A):#$@    x = 3#$@class D(B, C):#$@    pass#$@print(D.x)#$@",
+            question: "What will the following code output?humoclass A:#$@    x = 1#$@class B(A):#$@     x = 2#$@class C(A):#$@    x = 3#$@class D(B, C):#$@    pass#$@print(D.x)#$@",
             options: ["1", "2", "3", "TypeError"],
             answer: "2"
         },
         {
-            question: "Что такое декоратор в Python?",
+            question: "What is a decorator in Python?",
             options: [
-            "Функция, которая изменяет поведение другой функции",
-            "Тип данных",
-            "Метод для работы с классами",
-            "Способ импорта модулей"
+            "A function that modifies the behavior of another function",
+            "Data type",
+            "Method for working with classes",
+            "Way to import modules"
             ],
-            answer: "Функция, которая изменяет поведение другой функции"
+            answer: "A function that modifies the behavior of another function"
         },
         {
-            question: "Что выведет следующий код?humoasync def f():#$@    return 42#$@print(type(f()))",
+            question: "What will the following code output?humoasync def f():#$@    return 42#$@print(type(f()))",
             options: [
             "<class 'int'>",
             "<class 'coroutine'>",
@@ -294,62 +294,60 @@ export const quizData = [
             answer: "<class 'coroutine'>"
         },
         {
-            question: "Какой метод используется для реализации итератора?",
+            question: "Which method is used to implement an iterator?",
             options: ["__iter__()", "__next__()", "__loop__()", "__cycle__()"],
             answer: "__next__()"
         },
         {
-            question: "Что делает функция zip()?",
+            question: "What does the zip() function do?",
             options: [
-            "Объединяет несколько итерируемых объектов в кортежи",
-            "Сортирует список",
-            "Разделяет строку",
-            "Создает словарь"
+            "Combines multiple iterables into tuples",
+            "Sorts a list",
+            "Splits a string",
+            "Creates a dictionary"
             ],
-            answer: "Объединяет несколько итерируемых объектов в кортежи"
+            answer: "Combines multiple iterables into tuples"
         },
         {
-            question: "Что выведет следующий код?humox = [1, 2, 3]#$@y = x[:]#$@y.append(4)#$@print(x)",
-            options: ["[1, 2, 3, 4]", "[1, 2, 3]", "[4]", "Ошибка"],
+            question: "What will the following code output?humox = [1, 2, 3]#$@y = x[:]#$@y.append(4)#$@print(x)",
+            options: ["[1, 2, 3, 4]", "[1, 2, 3]", "[4]", "Error"],
             answer: "[1, 2, 3]"
         },
         {
-            question: "Что такое метакласс в Python?",
+            question: "What is a metaclass in Python?",
             options: [
-            "Класс, который создает другие классы",
-            "Базовый класс",
-            "Абстрактный метод",
-            "Тип данных"
+            "A class that creates other classes",
+            "Base class",
+            "Abstract method",
+            "Data type"
             ],
-            answer: "Класс, который создает другие классы"
+            answer: "A class that creates other classes"
         },
         {
-            question: "Что выведет следующий код?humodef f(x, *, y=10): return x + y#$@print(f(5, y=5))",
+            question: "What will the following code output?humodef f(x, *, y=10): return x + y#$@print(f(5, y=5))",
             options: ["10", "15", "5", "TypeError"],
             answer: "10"
         },
         {
-            question: "Что такое GIL в Python?",
+            question: "What is GIL in Python?",
             options: [
-            "Глобальная блокировка интерпретатора",
-            "Генератор итераторов",
-            "Графический интерфейс",
-            "Глобальная переменная"
+            "Global Interpreter Lock",
+            "Iterator generator",
+            "Graphical interface",
+            "Global variable"
             ],
-            answer: "Глобальная блокировка интерпретатора"
+            answer: "Global Interpreter Lock"
         },
         {
-            question: "Что делает метод super()?",
+            question: "What does the super() method do?",
             options: [
-            "Вызывает метод родительского класса",
-            "Создает новый класс",
-            "Удаляет объект",
-            "Импортирует модуль"
+            "Calls a method from the parent class",
+            "Creates a new class",
+            "Deletes an object",
+            "Imports a module"
             ],
-            answer: "Вызывает метод родительского класса"
+            answer: "Calls a method from the parent class"
         }
         ]
-
     }
-
-]; 
+];
