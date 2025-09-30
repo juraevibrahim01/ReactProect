@@ -27,7 +27,7 @@ export const TestPage = () => {
 
   const ball = (score / quiz.questions.length) * 100;
 
-  if (!quiz) return <h2>Тест не найден</h2>;
+  if (!quiz) return <h2>Test not found</h2>;
 
   // 🕒 таймер
   useEffect(() => {
@@ -96,6 +96,7 @@ export const TestPage = () => {
               <span>{formatTime(timeLeft)}</span>
             </div>
           </div>
+
           {!questionText && !questionCode ? <h3>{quiz.questions[currentQ].question}</h3> : <>
             <h3>{questionText}</h3>
             <div>
@@ -122,7 +123,7 @@ export const TestPage = () => {
           ))}
 
           <button onClick={handleAnswer} className={testStyle.buttonSubmit}>
-            Отправить
+            SEND
           </button>
         </div>
       ) : (
@@ -141,7 +142,7 @@ export const TestPage = () => {
             </div>
           </div>
           <h2 className={testStyle.result}>
-            Вы набрали {ball}% из {"100%"} баллов
+            You scored {ball}% of {"100%"} points
           </h2>
 
           <div className={testStyle.buttonRef}>
@@ -156,13 +157,13 @@ export const TestPage = () => {
               }}
             >
               <img src={ResetSvg} alt="Reset Image" />
-              Пройти тест снова
+              Take the test again
             </button>
 
             <Link to="/quiz" className={testStyle.linkButton}>
               <button className={testStyle.buttonRefresh}>
                 <img src={UndoSvg} alt="Undo Image" />
-                Назад к списку тестов
+                Back to the list of tests
               </button>
             </Link>
           </div>

@@ -76,5 +76,7 @@
     .img {
         width: 70px;
         height: 71px;
+        display: flex;
+        justify-content: center;
     }
 }

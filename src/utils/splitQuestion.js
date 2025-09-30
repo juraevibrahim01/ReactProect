@@ -1,5 +1,5 @@
 export function splitQuestion(question){
-    if(!question.includes('humo')) return ["",""]
+  if(!question.includes('humo')) return ["",""]
   const [questionText, questionCode] = question?.split("humo") ?? [
     "",
     "",
