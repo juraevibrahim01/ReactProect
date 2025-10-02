@@ -7,6 +7,8 @@ import { TestPage } from "../components/Test";
 import { SchoolPage } from "../pages/SchoolPage";
 import { SignupPage } from "../pages/SignUpPage";
 import { OurMentors } from '../pages/OurMentorsPage'
+import { Login } from "../pages/LoginPage";
+import { SignUp } from "../pages/SignUp";
 
 export const routes = createBrowserRouter([
     {
@@ -40,6 +42,13 @@ export const routes = createBrowserRouter([
             {
                 path: "/ourMentors",
                 element: < OurMentors />
+            },
+            {
+                path: "/login",
+                element: < Login />
+            },{
+                path: "/sign",
+                element: < SignUp />
             }
         ]
     } 

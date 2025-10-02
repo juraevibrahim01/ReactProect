@@ -1,0 +1,71 @@
+.fieldset {
+  border: 1px solid #ccc;        /* светлая рамка */
+  border-radius: 8px;            /* скругленные углы */
+  padding: 30px 20px;            /* внутренние отступы */
+  width: 320px;                   /* фиксированная ширина */
+  background-color: #fff;         /* белый фон */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* легкая тень */
+  margin: 100px auto;             /* центрирование по горизонтали */
+}
+
+.legend {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-align: center;
+    color: #111153;
+}
+
+.form {
+    padding: 50px 30px 20px 20px;
+}
+
+
+.inputs {
+    display: block;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 25px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.inputs:focus {
+  outline: none;
+  border-color: #4a90e2; /* подсветка при фокусе */
+  box-shadow: 0 0 5px rgba(74,144,226,0.5);
+}
+
+.button {
+    width: 300px;
+    height: 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4a90e2; /* цвет кнопки гармонирует с меню */
+    color: #fff;
+    font-weight: bold;  
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.button:hover {
+  background-color: #357ABD; /* затемнение при наведении */
+}
+
+.butonDiv {
+    display: flex;
+    justify-content: center;
+}
+
+.lables {
+    color: #111153;
+}
+
+.spanDiv {
+    display: flex;
+    justify-content: center;
+}

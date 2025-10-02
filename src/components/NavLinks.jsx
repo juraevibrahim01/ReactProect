@@ -65,7 +65,16 @@ export const NavLinks = ({onClick}) => {
           Our mentors
         </NavLink>
       </div>
-
+      <div className={sideBar.pages}>
+        <NavLink to={"/login"} className={({ isActive }) =>
+          isActive ? sideBar.active : sideBar.pages
+        }
+        onClick={onClick}
+        >
+          <img src={Login} alt="login logo" />
+          Login
+        </NavLink>
+      </div>
     </>
   );
 };
